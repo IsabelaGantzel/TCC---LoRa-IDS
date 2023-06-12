@@ -1,0 +1,1892 @@
+** Alert 1686161075.0: mail  - ossec,
+2023 Jun 07 15:04:35 isabela-ThinkCentre-M720s->ossec-monitord
+Rule: 502 (level 3) -> 'Ossec server started.'
+ossec: Ossec started.
+
+** Alert 1686161106.171: mail  - syslog,fts,authentication_success
+2023 Jun 07 15:05:06 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 10100 (level 4) -> 'First time user logged in.'
+Src IP: 172.16.255.198
+User: isabela
+Jun  7 15:05:05 isabela-ThinkCentre-M720s sshd[69989]: Accepted password for isabela from 172.16.255.198 port 33792 ssh2
+
+** Alert 1686161106.517: - pam,syslog,authentication_success,
+2023 Jun 07 15:05:06 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  7 15:05:05 isabela-ThinkCentre-M720s sshd[69989]: pam_unix(sshd:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686161106.826: - pam,syslog,authentication_success,
+2023 Jun 07 15:05:06 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  7 15:05:05 isabela-ThinkCentre-M720s systemd: pam_unix(systemd-user:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686161106.1139: mail  - syslog,errors,
+2023 Jun 07 15:05:06 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun  7 15:05:05 isabela-ThinkCentre-M720s pipewire[70000]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+
+** Alert 1686161106.1440: mail  - syslog,errors,
+2023 Jun 07 15:05:06 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun  7 15:05:05 isabela-ThinkCentre-M720s pipewire[70000]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+
+** Alert 1686161106.1741: mail  - syslog,errors,
+2023 Jun 07 15:05:06 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun  7 15:05:05 isabela-ThinkCentre-M720s pulseaudio[70001]: org.bluez.ProfileManager1.RegisterProfile() failed: org.bluez.Error.NotPermitted: UUID already registered
+
+** Alert 1686161180.2089: - pam,syslog,
+2023 Jun 07 15:06:20 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  7 15:06:19 isabela-ThinkCentre-M720s sshd[69989]: pam_unix(sshd:session): session closed for user isabela
+
+** Alert 1686161180.2355: mail  - syslog,errors,
+2023 Jun 07 15:06:20 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun  7 15:05:05 isabela-ThinkCentre-M720s pulseaudio[70001]: org.bluez.ProfileManager1.RegisterProfile() failed: org.bluez.Error.NotPermitted: UUID already registered
+
+** Alert 1686162321.2703: mail  - ossec,rootcheck,
+2023 Jun 07 15:25:21 isabela-ThinkCentre-M720s->rootcheck
+Rule: 510 (level 7) -> 'Host-based anomaly detection event (rootcheck).'
+Trojaned version of file '/bin/diff' detected. Signature used: 'bash|^/bin/sh|file\.h|proc\.h|/dev/[^n]|^/bin/.*sh' (Generic).
+
+** Alert 1686162321.3013: mail  - ossec,rootcheck,
+2023 Jun 07 15:25:21 isabela-ThinkCentre-M720s->rootcheck
+Rule: 510 (level 7) -> 'Host-based anomaly detection event (rootcheck).'
+Trojaned version of file '/usr/bin/diff' detected. Signature used: 'bash|^/bin/sh|file\.h|proc\.h|/dev/[^n]|^/bin/.*sh' (Generic).
+
+** Alert 1686162324.3327: - ossec,rootcheck,
+2023 Jun 07 15:25:24 isabela-ThinkCentre-M720s->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Testing against the CIS Debian Linux Benchmark v1.0. File: /etc/debian_version. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686162324.3666: - ossec,rootcheck,
+2023 Jun 07 15:25:24 isabela-ThinkCentre-M720s->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Debian Linux - 1.4 - Robust partition scheme - /tmp is not on its own partition {CIS: 1.4 Debian Linux}. File: /etc/fstab. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686162324.4048: - ossec,rootcheck,
+2023 Jun 07 15:25:24 isabela-ThinkCentre-M720s->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Debian Linux - 1.4 - Robust partition scheme - /opt is not on its own partition {CIS: 1.4 Debian Linux}. File: /opt. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686162324.4424: - ossec,rootcheck,
+2023 Jun 07 15:25:24 isabela-ThinkCentre-M720s->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Debian Linux - 1.4 - Robust partition scheme - /var is not on its own partition {CIS: 1.4 Debian Linux}. File: /etc/fstab. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686162324.4806: - ossec,rootcheck,
+2023 Jun 07 15:25:24 isabela-ThinkCentre-M720s->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Debian Linux - 2.6 - Sources list sanity - Security updates not enabled {CIS: 2.6 Debian Linux} {PCI_DSS: 6.2}. File: /etc/apt/sources.list. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686162324.5206: - ossec,rootcheck,
+2023 Jun 07 15:25:24 isabela-ThinkCentre-M720s->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Debian Linux - 4.16 - Disable standard boot services - MySQL server Enabled {CIS: 4.16 Debian Linux} {PCI_DSS: 2.2.2}. File: /etc/init.d/mysql. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686162324.5609: - ossec,rootcheck,
+2023 Jun 07 15:25:24 isabela-ThinkCentre-M720s->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Debian Linux - 13.11 - Non-root account with uid 0 {CIS: 13.11 Debian Linux} {PCI_DSS: 10.2.5}. File: /etc/passwd. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686169035.5983: - pam,syslog,
+2023 Jun 07 17:17:15 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  7 17:17:14 isabela-ThinkCentre-M720s sshd[68519]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686169035.6246: - pam,syslog,
+2023 Jun 07 17:17:15 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  7 17:17:14 isabela-ThinkCentre-M720s su: pam_unix(su-l:session): session closed for user luizroot
+
+** Alert 1686193201.0: - local,syslog,apparmor
+2023 Jun 08 00:00:01 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 52002 (level 3) -> 'Apparmor DENIED'
+Jun  8 00:00:00 isabela-ThinkCentre-M720s kernel: [1156160.802817] audit: type=1400 audit(1686193200.080:93): apparmor="DENIED" operation="capable" profile="/usr/sbin/cupsd" pid=72196 comm="cupsd" capability=12  capname="net_admin"
+
+** Alert 1686193201.387: - local,syslog,apparmor
+2023 Jun 08 00:00:01 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 52002 (level 3) -> 'Apparmor DENIED'
+Jun  8 00:00:00 isabela-ThinkCentre-M720s kernel: [1156160.818107] audit: type=1400 audit(1686193200.096:94): apparmor="DENIED" operation="capable" profile="/usr/sbin/cups-browsed" pid=72198 comm="cups-browsed" capability=23  capname="sys_nice"
+
+** Alert 1686241762.789: mail  - ossec,syscheck,
+2023 Jun 08 13:29:22 isabela-ThinkCentre-M720s->syscheck
+Rule: 550 (level 7) -> 'Integrity checksum changed.'
+Integrity checksum changed for: '/etc/cups/subscriptions.conf'
+Old md5sum was: '7eec7e9362ee0a706846bd70e9052f9d'
+New md5sum is : 'b9cdbed65e5579e6a09b356eb1018d30'
+Old sha1sum was: '3de44274c0ebbc0a29ffae372e4aedd83748b154'
+New sha1sum is : 'ed146a800f5e5dbf9f95b056d914ed6bd6628fa0'
+
+
+** Alert 1686241762.1235: mail  - ossec,syscheck,
+2023 Jun 08 13:29:22 isabela-ThinkCentre-M720s->syscheck
+Rule: 550 (level 7) -> 'Integrity checksum changed.'
+Integrity checksum changed for: '/etc/cups/subscriptions.conf.O'
+Old md5sum was: '74e450b4d8ff56abfc19f57f9aff51e5'
+New md5sum is : 'a649af43dc8bdb276e874cd9f2fcb600'
+Old sha1sum was: '8f3814b08fab38f1d75fc6b99a79181242b8673c'
+New sha1sum is : 'f56560e8122cc79fcc1b92d142ab97c680068d42'
+
+
+** Alert 1686267634.1684: - syslog,sshd,authentication_success,
+2023 Jun 08 20:40:34 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: isabela
+Jun  8 20:40:33 isabela-ThinkCentre-M720s sshd[75890]: Accepted password for isabela from 172.16.255.198 port 50902 ssh2
+
+** Alert 1686267634.2028: - pam,syslog,authentication_success,
+2023 Jun 08 20:40:34 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  8 20:40:33 isabela-ThinkCentre-M720s sshd[75890]: pam_unix(sshd:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686267634.2338: - pam,syslog,authentication_success,
+2023 Jun 08 20:40:34 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  8 20:40:33 isabela-ThinkCentre-M720s systemd: pam_unix(systemd-user:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686267634.2652: mail  - syslog,errors,
+2023 Jun 08 20:40:34 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun  8 20:40:33 isabela-ThinkCentre-M720s pipewire[75901]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+
+** Alert 1686267634.2953: mail  - syslog,errors,
+2023 Jun 08 20:40:34 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun  8 20:40:33 isabela-ThinkCentre-M720s pipewire[75901]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+
+** Alert 1686267634.3254: mail  - syslog,errors,
+2023 Jun 08 20:40:34 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun  8 20:40:33 isabela-ThinkCentre-M720s pulseaudio[75902]: org.bluez.ProfileManager1.RegisterProfile() failed: org.bluez.Error.NotPermitted: UUID already registered
+
+** Alert 1686267678.3602: mail  - syslog,sudo
+2023 Jun 08 20:41:18 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5403 (level 4) -> 'First time user executed sudo.'
+User: isabela
+Jun  8 20:41:17 isabela-ThinkCentre-M720s sudo:  isabela : TTY=pts/0 ; PWD=/var/log/snort ; USER=root ; COMMAND=/usr/bin/nano snort.alert.fast
+
+** Alert 1686267678.3929: - pam,syslog,authentication_success,
+2023 Jun 08 20:41:18 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  8 20:41:17 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session opened for user root(uid=0) by isabela(uid=1000)
+
+** Alert 1686267678.4236: mail  - syslog,errors,
+2023 Jun 08 20:41:18 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun  8 20:40:33 isabela-ThinkCentre-M720s pulseaudio[75902]: org.bluez.ProfileManager1.RegisterProfile() failed: org.bluez.Error.NotPermitted: UUID already registered
+
+** Alert 1686267758.4584: - pam,syslog,
+2023 Jun 08 20:42:38 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  8 20:42:36 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1686267780.4840: - syslog,sudo
+2023 Jun 08 20:43:00 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: isabela
+Jun  8 20:42:58 isabela-ThinkCentre-M720s sudo:  isabela : TTY=pts/0 ; PWD=/var/log/snort ; USER=root ; COMMAND=/usr/bin/vi snort.alert.fast
+
+** Alert 1686267780.5161: - pam,syslog,authentication_success,
+2023 Jun 08 20:43:00 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  8 20:42:58 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session opened for user root(uid=0) by isabela(uid=1000)
+
+** Alert 1686267822.5468: - pam,syslog,
+2023 Jun 08 20:43:42 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  8 20:43:42 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1686267846.5724: - syslog,sudo
+2023 Jun 08 20:44:06 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: isabela
+Jun  8 20:44:05 isabela-ThinkCentre-M720s sudo:  isabela : TTY=pts/0 ; PWD=/var/log/snort ; USER=root ; COMMAND=/usr/bin/vi snort.log
+
+** Alert 1686267846.6038: - pam,syslog,authentication_success,
+2023 Jun 08 20:44:06 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  8 20:44:05 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session opened for user root(uid=0) by isabela(uid=1000)
+
+** Alert 1686267852.6345: - pam,syslog,
+2023 Jun 08 20:44:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  8 20:44:10 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1686267858.6601: - syslog,sudo
+2023 Jun 08 20:44:18 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: isabela
+Jun  8 20:44:16 isabela-ThinkCentre-M720s sudo:  isabela : TTY=pts/0 ; PWD=/var/log/snort ; USER=root ; COMMAND=/usr/bin/nano snort.alert
+
+** Alert 1686267858.6919: - pam,syslog,authentication_success,
+2023 Jun 08 20:44:18 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  8 20:44:16 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session opened for user root(uid=0) by isabela(uid=1000)
+
+** Alert 1686267860.7226: - pam,syslog,
+2023 Jun 08 20:44:20 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  8 20:44:20 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1686267902.7482: - syslog,sudo
+2023 Jun 08 20:45:02 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: isabela
+Jun  8 20:45:02 isabela-ThinkCentre-M720s sudo:  isabela : TTY=pts/0 ; PWD=/var/log/snort ; USER=root ; COMMAND=/usr/bin/nano snort.alert
+
+** Alert 1686267902.7800: - pam,syslog,authentication_success,
+2023 Jun 08 20:45:02 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  8 20:45:02 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session opened for user root(uid=0) by isabela(uid=1000)
+
+** Alert 1686267904.8107: - pam,syslog,
+2023 Jun 08 20:45:04 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  8 20:45:04 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1686267908.8363: - syslog,sudo
+2023 Jun 08 20:45:08 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: isabela
+Jun  8 20:45:07 isabela-ThinkCentre-M720s sudo:  isabela : TTY=pts/0 ; PWD=/var/log/snort ; USER=root ; COMMAND=/usr/bin/nano snort.alert.fast
+
+** Alert 1686267908.8686: - pam,syslog,authentication_success,
+2023 Jun 08 20:45:08 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  8 20:45:07 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session opened for user root(uid=0) by isabela(uid=1000)
+
+** Alert 1686268006.8993: - pam,syslog,
+2023 Jun 08 20:46:46 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  8 20:46:44 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1686268332.9249: - syslog,sshd,authentication_success,
+2023 Jun 08 20:52:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 127.0.0.1
+User: isabela
+Jun  8 20:52:12 isabela-ThinkCentre-M720s sshd[75972]: Accepted password for isabela from 127.0.0.1 port 36922 ssh2
+
+** Alert 1686268332.9583: - pam,syslog,authentication_success,
+2023 Jun 08 20:52:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  8 20:52:12 isabela-ThinkCentre-M720s sshd[75972]: pam_unix(sshd:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686268332.9893: - pam,syslog,
+2023 Jun 08 20:52:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  8 20:52:12 isabela-ThinkCentre-M720s sshd[75972]: pam_unix(sshd:session): session closed for user isabela
+
+** Alert 1686268673.10159: - syslog,sshd,authentication_success,
+2023 Jun 08 20:57:53 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 127.0.0.1
+User: isabela
+Jun  8 20:57:51 isabela-ThinkCentre-M720s sshd[75996]: Accepted password for isabela from 127.0.0.1 port 47524 ssh2
+
+** Alert 1686268673.10494: - pam,syslog,authentication_success,
+2023 Jun 08 20:57:53 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  8 20:57:51 isabela-ThinkCentre-M720s sshd[75996]: pam_unix(sshd:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686268673.10805: - pam,syslog,
+2023 Jun 08 20:57:53 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  8 20:57:51 isabela-ThinkCentre-M720s sshd[75996]: pam_unix(sshd:session): session closed for user isabela
+
+** Alert 1686268783.11072: - syslog,sshd,authentication_success,
+2023 Jun 08 20:59:43 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 127.0.0.1
+User: isabela
+Jun  8 20:59:43 isabela-ThinkCentre-M720s sshd[76011]: Accepted password for isabela from 127.0.0.1 port 53372 ssh2
+
+** Alert 1686268783.11407: - pam,syslog,authentication_success,
+2023 Jun 08 20:59:43 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  8 20:59:43 isabela-ThinkCentre-M720s sshd[76011]: pam_unix(sshd:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686268783.11718: - pam,syslog,
+2023 Jun 08 20:59:43 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  8 20:59:43 isabela-ThinkCentre-M720s sshd[76011]: pam_unix(sshd:session): session closed for user isabela
+
+** Alert 1686268957.11985: - pam,syslog,authentication_failed,
+2023 Jun 08 21:02:37 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5503 (level 5) -> 'User login failed.'
+Src IP: 172.16.255.198
+User: isabela
+Jun  8 21:02:37 isabela-ThinkCentre-M720s sshd[76034]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.255.198  user=isabela
+
+** Alert 1686268961.12369: - syslog,sshd,authentication_failed,
+2023 Jun 08 21:02:41 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5716 (level 5) -> 'SSHD authentication failed.'
+Src IP: 172.16.255.198
+User: isabela
+Jun  8 21:02:39 isabela-ThinkCentre-M720s sshd[76034]: Failed password for isabela from 172.16.255.198 port 37218 ssh2
+
+** Alert 1686268973.12710: - syslog,sshd,authentication_failed,
+2023 Jun 08 21:02:53 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5716 (level 5) -> 'SSHD authentication failed.'
+Src IP: 172.16.255.198
+User: isabela
+Jun  8 21:02:47 isabela-ThinkCentre-M720s sshd[76034]: Failed password for isabela from 172.16.255.198 port 37218 ssh2
+
+** Alert 1686268973.13051: - syslog,sshd,authentication_success,
+2023 Jun 08 21:02:53 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: isabela
+Jun  8 21:02:53 isabela-ThinkCentre-M720s sshd[76034]: Accepted password for isabela from 172.16.255.198 port 37218 ssh2
+
+** Alert 1686268973.13396: - pam,syslog,authentication_success,
+2023 Jun 08 21:02:53 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  8 21:02:53 isabela-ThinkCentre-M720s sshd[76034]: pam_unix(sshd:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686268977.13707: - pam,syslog,
+2023 Jun 08 21:02:57 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  8 21:02:57 isabela-ThinkCentre-M720s sshd[76034]: pam_unix(sshd:session): session closed for user isabela
+
+** Alert 1686276777.13974: - pam,syslog,
+2023 Jun 08 23:12:57 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  8 23:12:56 isabela-ThinkCentre-M720s sshd[75890]: pam_unix(sshd:session): session closed for user isabela
+
+** Alert 1686279600.0: - local,syslog,apparmor
+2023 Jun 09 00:00:00 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 52002 (level 3) -> 'Apparmor DENIED'
+Jun  9 00:00:00 isabela-ThinkCentre-M720s kernel: [1242560.335305] audit: type=1400 audit(1686279600.083:95): apparmor="DENIED" operation="capable" profile="/usr/sbin/cupsd" pid=76397 comm="cupsd" capability=12  capname="net_admin"
+
+** Alert 1686279600.387: - local,syslog,apparmor
+2023 Jun 09 00:00:00 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 52002 (level 3) -> 'Apparmor DENIED'
+Jun  9 00:00:00 isabela-ThinkCentre-M720s kernel: [1242560.347900] audit: type=1400 audit(1686279600.095:96): apparmor="DENIED" operation="capable" profile="/usr/sbin/cups-browsed" pid=76399 comm="cups-browsed" capability=23  capname="sys_nice"
+
+** Alert 1686307018.789: mail  - syslog,fts,authentication_success
+2023 Jun 09 07:36:58 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 10100 (level 4) -> 'First time user logged in.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 07:36:57 isabela-ThinkCentre-M720s sshd[78274]: Accepted password for luiz from 172.16.255.198 port 33390 ssh2
+
+** Alert 1686307018.1129: - pam,syslog,authentication_success,
+2023 Jun 09 07:36:58 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 07:36:57 isabela-ThinkCentre-M720s sshd[78274]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686307034.1436: - pam,syslog,authentication_failed,
+2023 Jun 09 07:37:14 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5503 (level 5) -> 'User login failed.'
+User: luiz
+Jun  9 07:37:12 isabela-ThinkCentre-M720s su: pam_unix(su-l:auth): authentication failure; logname=luiz uid=1001 euid=0 tty=/dev/pts/0 ruser=luiz rhost=  user=luizroot
+
+** Alert 1686307036.1789: - syslog, su,authentication_failed,
+2023 Jun 09 07:37:16 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5301 (level 5) -> 'User missed the password to change UID (user id).'
+User: luizroot)
+Jun  9 07:37:15 isabela-ThinkCentre-M720s su: FAILED SU (to luizroot) luiz on pts/0
+
+** Alert 1686307040.2094: - pam,syslog,authentication_failed,
+2023 Jun 09 07:37:20 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5503 (level 5) -> 'User login failed.'
+User: luiz
+Jun  9 07:37:20 isabela-ThinkCentre-M720s su: pam_unix(su-l:auth): authentication failure; logname=luiz uid=1001 euid=0 tty=/dev/pts/0 ruser=luiz rhost=  user=luizroot
+
+** Alert 1686307042.2447: - syslog, su,authentication_failed,
+2023 Jun 09 07:37:22 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5301 (level 5) -> 'User missed the password to change UID (user id).'
+User: luizroot)
+Jun  9 07:37:22 isabela-ThinkCentre-M720s su: FAILED SU (to luizroot) luiz on pts/0
+
+** Alert 1686307048.2752: - pam,syslog,authentication_success,
+2023 Jun 09 07:37:28 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 07:37:26 isabela-ThinkCentre-M720s su: pam_unix(su-l:session): session opened for user luizroot(uid=0) by luiz(uid=1001)
+
+** Alert 1686307950.3058: mail  - ossec,
+2023 Jun 09 07:52:30 isabela-ThinkCentre-M720s->ossec-monitord
+Rule: 502 (level 3) -> 'Ossec server started.'
+ossec: Ossec started.
+
+** Alert 1686307969.3232: mail  - ossec,
+2023 Jun 09 07:52:49 (gwLora) 192.168.2.83->ossec
+Rule: 501 (level 3) -> 'New ossec agent connected.'
+ossec: Agent started: 'gwLora->192.168.2.83'.
+
+** Alert 1686308072.3422: mail  - ossec,syscheck,
+2023 Jun 09 07:54:32 isabela-ThinkCentre-M720s->syscheck
+Rule: 551 (level 7) -> 'Integrity checksum changed again (2nd time).'
+Integrity checksum changed for: '/etc/cups/subscriptions.conf'
+Old md5sum was: 'b9cdbed65e5579e6a09b356eb1018d30'
+New md5sum is : '91cb8b4edac978e7afa1281e5c1d29a8'
+Old sha1sum was: 'ed146a800f5e5dbf9f95b056d914ed6bd6628fa0'
+New sha1sum is : '05b115cc6679b73bb0769fa99238e576e7c4f9fe'
+
+
+** Alert 1686308072.3886: mail  - ossec,syscheck,
+2023 Jun 09 07:54:32 isabela-ThinkCentre-M720s->syscheck
+Rule: 551 (level 7) -> 'Integrity checksum changed again (2nd time).'
+Integrity checksum changed for: '/etc/cups/subscriptions.conf.O'
+Size changed from '381' to '91'
+Old md5sum was: 'a649af43dc8bdb276e874cd9f2fcb600'
+New md5sum is : '04ac4a9803f9b1a5918a7783595216f6'
+Old sha1sum was: 'f56560e8122cc79fcc1b92d142ab97c680068d42'
+New sha1sum is : 'b3d986c98d93cf75174bffd357db8d372fc15585'
+
+
+** Alert 1686308167.4384: - pam,syslog,authentication_failed,
+2023 Jun 09 07:56:07 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 5503 (level 5) -> 'User login failed.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 07:56:06 utfpr-cm sshd[28918]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.255.198  user=luiz
+
+** Alert 1686308169.4740: - syslog,sshd,authentication_failed,
+2023 Jun 09 07:56:09 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 5716 (level 5) -> 'SSHD authentication failed.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 07:56:08 utfpr-cm sshd[28918]: Failed password for luiz from 172.16.255.198 port 49532 ssh2
+
+** Alert 1686308173.5053: - syslog,sshd,authentication_failed,
+2023 Jun 09 07:56:13 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 5716 (level 5) -> 'SSHD authentication failed.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 07:56:11 utfpr-cm sshd[28918]: Failed password for luiz from 172.16.255.198 port 49532 ssh2
+
+** Alert 1686308183.5366: - syslog,sshd,authentication_failed,
+2023 Jun 09 07:56:23 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 5716 (level 5) -> 'SSHD authentication failed.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 07:56:22 utfpr-cm sshd[28918]: Failed password for luiz from 172.16.255.198 port 49532 ssh2
+
+** Alert 1686308183.5679: mail  - syslog,access_control,authentication_failed,
+2023 Jun 09 07:56:23 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 2502 (level 10) -> 'User missed the password more than one time'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 07:56:22 utfpr-cm sshd[28918]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.255.198  user=luiz
+
+** Alert 1686308191.6069: mail  - syslog,fts,authentication_success
+2023 Jun 09 07:56:31 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 10100 (level 4) -> 'First time user logged in.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 07:56:31 utfpr-cm sshd[28932]: Accepted password for luiz from 172.16.255.198 port 52572 ssh2
+
+** Alert 1686308191.6389: - pam,syslog,authentication_success,
+2023 Jun 09 07:56:31 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 07:56:31 utfpr-cm sshd[28932]: pam_unix(sshd:session): session opened for user luiz by (uid=0)
+
+** Alert 1686308197.6665: - pam,syslog,authentication_failed,
+2023 Jun 09 07:56:37 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 5503 (level 5) -> 'User login failed.'
+User: luiz
+Jun  9 07:56:35 utfpr-cm su[28964]: pam_unix(su:auth): authentication failure; logname=luiz uid=1001 euid=0 tty=/dev/pts/2 ruser=luiz rhost=  user=root
+
+** Alert 1686308197.6998: - syslog,access_control,authentication_failed,
+2023 Jun 09 07:56:37 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 2501 (level 5) -> 'User authentication failure.'
+Jun  9 07:56:37 utfpr-cm su[28964]: pam_authenticate: Authentication failure
+
+** Alert 1686308197.7266: - syslog, su,authentication_failed,
+2023 Jun 09 07:56:37 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 5301 (level 5) -> 'User missed the password to change UID (user id).'
+Jun  9 07:56:37 utfpr-cm su[28964]: FAILED su for root by luiz
+
+** Alert 1686308197.7530: mail  - syslog, su,authentication_failed,
+2023 Jun 09 07:56:37 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 5302 (level 9) -> 'User missed the password to change UID to root.'
+User: root
+Jun  9 07:56:37 utfpr-cm su[28964]: - /dev/pts/2 luiz:root
+
+** Alert 1686308201.7805: - pam,syslog,authentication_failed,
+2023 Jun 09 07:56:41 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 5503 (level 5) -> 'User login failed.'
+User: luiz
+Jun  9 07:56:40 utfpr-cm su[28967]: pam_unix(su:auth): authentication failure; logname=luiz uid=1001 euid=0 tty=/dev/pts/2 ruser=luiz rhost=  user=root
+
+** Alert 1686308203.8138: - syslog,access_control,authentication_failed,
+2023 Jun 09 07:56:43 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 2501 (level 5) -> 'User authentication failure.'
+Jun  9 07:56:42 utfpr-cm su[28967]: pam_authenticate: Authentication failure
+
+** Alert 1686308203.8406: - syslog, su,authentication_failed,
+2023 Jun 09 07:56:43 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 5301 (level 5) -> 'User missed the password to change UID (user id).'
+Jun  9 07:56:42 utfpr-cm su[28967]: FAILED su for root by luiz
+
+** Alert 1686308203.8670: mail  - syslog, su,authentication_failed,
+2023 Jun 09 07:56:43 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 5302 (level 9) -> 'User missed the password to change UID to root.'
+User: root
+Jun  9 07:56:42 utfpr-cm su[28967]: - /dev/pts/2 luiz:root
+
+** Alert 1686308205.8945: - pam,syslog,
+2023 Jun 09 07:56:45 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 07:56:43 utfpr-cm sshd[28932]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686308285.9187: - syslog,dpkg,
+2023 Jun 09 07:58:05 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:58:04 install libapr1:amd64 <none> 1.7.0-8ubuntu0.22.04.1
+
+** Alert 1686308285.9441: - syslog,dpkg,
+2023 Jun 09 07:58:05 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:58:05 install libaprutil1:amd64 <none> 1.6.1-5ubuntu4.22.04.1
+
+** Alert 1686308285.9699: - syslog,dpkg,
+2023 Jun 09 07:58:05 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:58:05 install libaprutil1-dbd-sqlite3:amd64 <none> 1.6.1-5ubuntu4.22.04.1
+
+** Alert 1686308285.9969: - syslog,dpkg,
+2023 Jun 09 07:58:05 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:58:05 install libaprutil1-ldap:amd64 <none> 1.6.1-5ubuntu4.22.04.1
+
+** Alert 1686308287.10232: - syslog,dpkg,
+2023 Jun 09 07:58:07 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:58:05 install liblua5.3-0:amd64 <none> 5.3.6-1build1
+
+** Alert 1686308287.10482: - syslog,dpkg,
+2023 Jun 09 07:58:07 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:58:05 install apache2-bin:amd64 <none> 2.4.52-1ubuntu4.5
+
+** Alert 1686308287.10736: - syslog,dpkg,
+2023 Jun 09 07:58:07 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:58:06 install apache2-data:all <none> 2.4.52-1ubuntu4.5
+
+** Alert 1686308287.10989: - syslog,dpkg,
+2023 Jun 09 07:58:07 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:58:06 install apache2-utils:amd64 <none> 2.4.52-1ubuntu4.5
+
+** Alert 1686308287.11245: - syslog,dpkg,
+2023 Jun 09 07:58:07 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:58:06 install apache2:amd64 <none> 2.4.52-1ubuntu4.5
+
+** Alert 1686308287.11495: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:58:07 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:58:06 status installed libapr1:amd64 1.7.0-8ubuntu0.22.04.1
+
+** Alert 1686308287.11762: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:58:07 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:58:06 status installed liblua5.3-0:amd64 5.3.6-1build1
+
+** Alert 1686308287.12024: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:58:07 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:58:06 status installed apache2-data:all 2.4.52-1ubuntu4.5
+
+** Alert 1686308287.12289: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:58:07 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:58:06 status installed libaprutil1:amd64 1.6.1-5ubuntu4.22.04.1
+
+** Alert 1686308287.12560: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:58:07 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:58:06 status installed libaprutil1-ldap:amd64 1.6.1-5ubuntu4.22.04.1
+
+** Alert 1686308287.12836: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:58:07 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:58:06 status installed libaprutil1-dbd-sqlite3:amd64 1.6.1-5ubuntu4.22.04.1
+
+** Alert 1686308287.13119: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:58:07 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:58:06 status installed apache2-utils:amd64 2.4.52-1ubuntu4.5
+
+** Alert 1686308287.13387: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:58:07 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:58:06 status installed apache2-bin:amd64 2.4.52-1ubuntu4.5
+
+** Alert 1686308291.13653: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:58:11 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:58:10 status installed apache2:amd64 2.4.52-1ubuntu4.5
+
+** Alert 1686308291.13915: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:58:11 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:58:10 status installed ufw:all 0.36.1-4build1
+
+** Alert 1686308291.14168: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:58:11 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:58:10 status installed man-db:amd64 2.10.2-1
+
+** Alert 1686308291.14420: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:58:11 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:58:10 status installed libc-bin:amd64 2.35-0ubuntu3.1
+
+** Alert 1686308341.14681: - syslog,dpkg,
+2023 Jun 09 07:59:01 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:59:01 install php-common:all <none> 2:92ubuntu1
+
+** Alert 1686308341.14926: - syslog,dpkg,
+2023 Jun 09 07:59:01 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:59:01 install php8.1-common:amd64 <none> 8.1.2-1ubuntu2.11
+
+** Alert 1686308343.15182: - syslog,dpkg,
+2023 Jun 09 07:59:03 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:59:01 install php8.1-opcache:amd64 <none> 8.1.2-1ubuntu2.11
+
+** Alert 1686308343.15439: - syslog,dpkg,
+2023 Jun 09 07:59:03 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:59:01 install php8.1-readline:amd64 <none> 8.1.2-1ubuntu2.11
+
+** Alert 1686308343.15697: - syslog,dpkg,
+2023 Jun 09 07:59:03 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:59:02 install php8.1-cli:amd64 <none> 8.1.2-1ubuntu2.11
+
+** Alert 1686308343.15950: - syslog,dpkg,
+2023 Jun 09 07:59:03 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:59:02 install libapache2-mod-php8.1:amd64 <none> 8.1.2-1ubuntu2.11
+
+** Alert 1686308343.16214: - syslog,dpkg,
+2023 Jun 09 07:59:03 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 07:59:02 install libapache2-mod-php:all <none> 2:8.1+92ubuntu1
+
+** Alert 1686308343.16471: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:59:03 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:59:03 status installed php-common:all 2:92ubuntu1
+
+** Alert 1686308351.16728: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:59:11 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:59:10 status installed php8.1-common:amd64 8.1.2-1ubuntu2.11
+
+** Alert 1686308351.16996: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:59:11 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:59:10 status installed php8.1-readline:amd64 8.1.2-1ubuntu2.11
+
+** Alert 1686308351.17266: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:59:11 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:59:10 status installed php8.1-opcache:amd64 8.1.2-1ubuntu2.11
+
+** Alert 1686308353.17535: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:59:13 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:59:12 status installed php8.1-cli:amd64 8.1.2-1ubuntu2.11
+
+** Alert 1686308355.17800: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:59:15 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:59:14 status installed libapache2-mod-php8.1:amd64 8.1.2-1ubuntu2.11
+
+** Alert 1686308355.18076: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:59:15 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:59:14 status installed libapache2-mod-php:all 2:8.1+92ubuntu1
+
+** Alert 1686308355.18345: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:59:15 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:59:14 status installed man-db:amd64 2.10.2-1
+
+** Alert 1686308355.18597: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:59:15 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:59:14 status installed php8.1-cli:amd64 8.1.2-1ubuntu2.11
+
+** Alert 1686308355.18862: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 07:59:15 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 07:59:14 status installed libapache2-mod-php8.1:amd64 8.1.2-1ubuntu2.11
+
+** Alert 1686308538.19138: - ossec,rootcheck,
+2023 Jun 09 08:02:18 (gwLora) 192.168.2.83->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Testing against the CIS Debian Linux Benchmark v1.0. File: /etc/debian_version. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686308538.19474: - ossec,rootcheck,
+2023 Jun 09 08:02:18 (gwLora) 192.168.2.83->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Debian Linux - 1.4 - Robust partition scheme - /tmp is not on its own partition {CIS: 1.4 Debian Linux}. File: /etc/fstab. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686308538.19853: - ossec,rootcheck,
+2023 Jun 09 08:02:18 (gwLora) 192.168.2.83->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Debian Linux - 1.4 - Robust partition scheme - /opt is not on its own partition {CIS: 1.4 Debian Linux}. File: /opt. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686308538.20226: - ossec,rootcheck,
+2023 Jun 09 08:02:18 (gwLora) 192.168.2.83->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Debian Linux - 1.4 - Robust partition scheme - /var is not on its own partition {CIS: 1.4 Debian Linux}. File: /etc/fstab. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686308538.20605: - ossec,rootcheck,
+2023 Jun 09 08:02:18 (gwLora) 192.168.2.83->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Debian Linux - 2.6 - Sources list sanity - Security updates not enabled {CIS: 2.6 Debian Linux} {PCI_DSS: 6.2}. File: /etc/apt/sources.list. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686308538.21002: - ossec,rootcheck,
+2023 Jun 09 08:02:18 (gwLora) 192.168.2.83->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Debian Linux - 4.7 - Disable standard boot services - NFS Enabled {CIS: 4.7 Debian Linux} {PCI_DSS: 2.2.2}. File: /etc/init.d/nfs-common. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686308538.21396: - ossec,rootcheck,
+2023 Jun 09 08:02:18 (gwLora) 192.168.2.83->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Debian Linux - 13.11 - Non-root account with uid 0 {CIS: 13.11 Debian Linux} {PCI_DSS: 10.2.5}. File: /etc/passwd. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686309205.21767: - ossec,rootcheck,
+2023 Jun 09 08:13:25 isabela-ThinkCentre-M720s->rootcheck
+Rule: 516 (level 3) -> 'System Audit event.'
+System Audit: CIS - Debian Linux - 4.13 - Disable standard boot services - Web server Enabled {CIS: 4.13 Debian Linux} {PCI_DSS: 2.2.2}. File: /etc/init.d/apache2. Reference: https://benchmarks.cisecurity.org/tools2/linux/CIS_Debian_Benchmark_v1.0.pdf .
+
+** Alert 1686311565.22171: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 08:52:45 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 08:52:44 status installed libapache2-mod-php:all 2:8.1+92ubuntu1
+
+** Alert 1686311565.22440: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 08:52:45 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2903 (level 7) -> 'Dpkg (Debian Package) removed.'
+2023-06-09 08:52:44 remove libapache2-mod-php:all 2:8.1+92ubuntu1 <none>
+
+** Alert 1686311599.22700: - syslog,dpkg,
+2023 Jun 09 08:53:19 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2023-06-09 08:53:17 install libapache2-mod-php7.4:amd64 <none> 8.1.2-1ubuntu2.11
+
+** Alert 1686311599.22964: mail  - syslog,dpkg,config_changed,
+2023 Jun 09 08:53:19 isabela-ThinkCentre-M720s->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2023-06-09 08:53:17 status installed libapache2-mod-php7.4:amd64 8.1.2-1ubuntu2.11
+
+** Alert 1686312029.23240: - syslog,sshd,authentication_success,
+2023 Jun 09 09:00:29 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 09:00:28 isabela-ThinkCentre-M720s sshd[87510]: Accepted password for luiz from 172.16.255.198 port 59382 ssh2
+
+** Alert 1686312029.23579: - pam,syslog,authentication_success,
+2023 Jun 09 09:00:29 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 09:00:28 isabela-ThinkCentre-M720s sshd[87510]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686312029.23887: - syslog,sshd,authentication_success,
+2023 Jun 09 09:00:29 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 09:00:28 isabela-ThinkCentre-M720s sshd[87512]: Accepted password for luiz from 172.16.255.198 port 59386 ssh2
+
+** Alert 1686312029.24226: - pam,syslog,authentication_success,
+2023 Jun 09 09:00:29 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 09:00:28 isabela-ThinkCentre-M720s sshd[87512]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686312095.24534: - syslog,sshd,authentication_success,
+2023 Jun 09 09:01:35 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 09:01:35 isabela-ThinkCentre-M720s sshd[87555]: Accepted password for luiz from 172.16.255.198 port 38306 ssh2
+
+** Alert 1686312095.24873: - pam,syslog,authentication_success,
+2023 Jun 09 09:01:35 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 09:01:35 isabela-ThinkCentre-M720s sshd[87555]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686312105.25181: - syslog,sshd,authentication_success,
+2023 Jun 09 09:01:45 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 09:01:45 isabela-ThinkCentre-M720s sshd[87566]: Accepted password for luiz from 172.16.255.198 port 57270 ssh2
+
+** Alert 1686312105.25520: - syslog,sshd,authentication_success,
+2023 Jun 09 09:01:45 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 09:01:45 isabela-ThinkCentre-M720s sshd[87568]: Accepted password for luiz from 172.16.255.198 port 57284 ssh2
+
+** Alert 1686312105.25859: - pam,syslog,authentication_success,
+2023 Jun 09 09:01:45 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 09:01:45 isabela-ThinkCentre-M720s sshd[87566]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686312105.26167: - pam,syslog,authentication_success,
+2023 Jun 09 09:01:45 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 09:01:45 isabela-ThinkCentre-M720s sshd[87568]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686312197.26475: - pam,syslog,
+2023 Jun 09 09:03:17 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 09:03:16 isabela-ThinkCentre-M720s sshd[87568]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686312197.26739: - pam,syslog,
+2023 Jun 09 09:03:17 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 09:03:16 isabela-ThinkCentre-M720s sshd[87566]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686312203.27003: - syslog,sshd,authentication_success,
+2023 Jun 09 09:03:23 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 09:03:22 isabela-ThinkCentre-M720s sshd[87593]: Accepted password for luiz from 172.16.255.198 port 50872 ssh2
+
+** Alert 1686312203.27342: - syslog,sshd,authentication_success,
+2023 Jun 09 09:03:23 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 09:03:22 isabela-ThinkCentre-M720s sshd[87592]: Accepted password for luiz from 172.16.255.198 port 50862 ssh2
+
+** Alert 1686312203.27681: - pam,syslog,authentication_success,
+2023 Jun 09 09:03:23 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 09:03:22 isabela-ThinkCentre-M720s sshd[87592]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686312203.27989: - pam,syslog,authentication_success,
+2023 Jun 09 09:03:23 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 09:03:22 isabela-ThinkCentre-M720s sshd[87593]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686312299.28297: - pam,syslog,
+2023 Jun 09 09:04:59 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 09:04:59 isabela-ThinkCentre-M720s sshd[87512]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686312299.28561: - pam,syslog,
+2023 Jun 09 09:04:59 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 09:04:59 isabela-ThinkCentre-M720s sshd[87510]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686312313.28825: - pam,syslog,
+2023 Jun 09 09:05:13 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 09:05:12 isabela-ThinkCentre-M720s sshd[87593]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686312313.29089: - pam,syslog,
+2023 Jun 09 09:05:13 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 09:05:12 isabela-ThinkCentre-M720s sshd[87592]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686312317.29353: - syslog,sshd,authentication_success,
+2023 Jun 09 09:05:17 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 09:05:16 isabela-ThinkCentre-M720s sshd[87625]: Accepted password for luiz from 172.16.255.198 port 33728 ssh2
+
+** Alert 1686312317.29692: - syslog,sshd,authentication_success,
+2023 Jun 09 09:05:17 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 09:05:16 isabela-ThinkCentre-M720s sshd[87624]: Accepted password for luiz from 172.16.255.198 port 33722 ssh2
+
+** Alert 1686312317.30031: - pam,syslog,authentication_success,
+2023 Jun 09 09:05:17 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 09:05:16 isabela-ThinkCentre-M720s sshd[87624]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686312317.30339: - pam,syslog,authentication_success,
+2023 Jun 09 09:05:17 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 09:05:16 isabela-ThinkCentre-M720s sshd[87625]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686312459.30647: - pam,syslog,
+2023 Jun 09 09:07:39 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 09:07:39 isabela-ThinkCentre-M720s sshd[87625]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686312459.30911: - pam,syslog,
+2023 Jun 09 09:07:39 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 09:07:39 isabela-ThinkCentre-M720s sshd[87624]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686312470.31175: - syslog,sshd,authentication_success,
+2023 Jun 09 09:07:50 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 09:07:49 isabela-ThinkCentre-M720s sshd[87649]: Accepted password for luiz from 172.16.255.198 port 46946 ssh2
+
+** Alert 1686312470.31514: - pam,syslog,authentication_success,
+2023 Jun 09 09:07:50 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 09:07:49 isabela-ThinkCentre-M720s sshd[87649]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686312470.31822: - syslog,sshd,authentication_success,
+2023 Jun 09 09:07:50 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 09:07:49 isabela-ThinkCentre-M720s sshd[87651]: Accepted password for luiz from 172.16.255.198 port 46958 ssh2
+
+** Alert 1686312470.32161: - pam,syslog,authentication_success,
+2023 Jun 09 09:07:50 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 09:07:49 isabela-ThinkCentre-M720s sshd[87651]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686312650.32469: - pam,syslog,
+2023 Jun 09 09:10:50 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 09:10:49 isabela-ThinkCentre-M720s sshd[87649]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686312668.32733: - pam,syslog,
+2023 Jun 09 09:11:08 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 09:11:07 isabela-ThinkCentre-M720s sshd[87651]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686312674.32997: - syslog,sshd,authentication_success,
+2023 Jun 09 09:11:14 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 09:11:14 isabela-ThinkCentre-M720s sshd[87736]: Accepted password for luiz from 172.16.255.198 port 54290 ssh2
+
+** Alert 1686312674.33336: - pam,syslog,authentication_success,
+2023 Jun 09 09:11:14 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 09:11:14 isabela-ThinkCentre-M720s sshd[87736]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686312674.33644: - syslog,sshd,authentication_success,
+2023 Jun 09 09:11:14 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 09:11:14 isabela-ThinkCentre-M720s sshd[87734]: Accepted password for luiz from 172.16.255.198 port 54282 ssh2
+
+** Alert 1686312674.33983: - pam,syslog,authentication_success,
+2023 Jun 09 09:11:14 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 09:11:14 isabela-ThinkCentre-M720s sshd[87734]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686312856.34291: - pam,syslog,
+2023 Jun 09 09:14:16 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 09:14:15 isabela-ThinkCentre-M720s sshd[87734]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686312856.34555: - pam,syslog,
+2023 Jun 09 09:14:16 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 09:14:15 isabela-ThinkCentre-M720s sshd[87736]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686315919.34819: - pam,syslog,
+2023 Jun 09 10:05:19 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 10:05:17 utfpr-cm sshd[28383]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686315919.35062: - pam,syslog,
+2023 Jun 09 10:05:19 (gwLora) 192.168.2.83->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 10:05:17 utfpr-cm su[28415]: pam_unix(su:session): session closed for user luizroot
+
+** Alert 1686320562.35305: - syslog,sshd,authentication_success,
+2023 Jun 09 11:22:42 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:22:41 isabela-ThinkCentre-M720s sshd[88215]: Accepted password for luiz from 172.16.255.198 port 43378 ssh2
+
+** Alert 1686320562.35644: - pam,syslog,authentication_success,
+2023 Jun 09 11:22:42 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:22:41 isabela-ThinkCentre-M720s sshd[88215]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686320778.35952: - pam,syslog,
+2023 Jun 09 11:26:18 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:26:18 isabela-ThinkCentre-M720s su: pam_unix(su-l:session): session closed for user luizroot
+
+** Alert 1686320800.36211: - syslog,sshd,authentication_success,
+2023 Jun 09 11:26:40 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:26:39 isabela-ThinkCentre-M720s sshd[88244]: Accepted password for luiz from 172.16.255.198 port 57684 ssh2
+
+** Alert 1686320800.36550: - pam,syslog,authentication_success,
+2023 Jun 09 11:26:40 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:26:39 isabela-ThinkCentre-M720s sshd[88244]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686320824.36858: - syslog,sshd,authentication_success,
+2023 Jun 09 11:27:04 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:27:03 isabela-ThinkCentre-M720s sshd[88256]: Accepted password for luiz from 172.16.255.198 port 34548 ssh2
+
+** Alert 1686320824.37197: - pam,syslog,authentication_success,
+2023 Jun 09 11:27:04 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:27:03 isabela-ThinkCentre-M720s sshd[88256]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686320828.37505: - syslog,sshd,authentication_success,
+2023 Jun 09 11:27:08 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:27:08 isabela-ThinkCentre-M720s sshd[88267]: Accepted password for luiz from 172.16.255.198 port 34552 ssh2
+
+** Alert 1686320828.37844: - pam,syslog,authentication_success,
+2023 Jun 09 11:27:08 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:27:08 isabela-ThinkCentre-M720s sshd[88267]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686320866.38152: - pam,syslog,authentication_success,
+2023 Jun 09 11:27:46 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:27:46 isabela-ThinkCentre-M720s su: pam_unix(su-l:session): session opened for user luizroot(uid=0) by luiz(uid=1001)
+
+** Alert 1686321012.38459: - pam,syslog,
+2023 Jun 09 11:30:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:30:12 isabela-ThinkCentre-M720s sshd[88215]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686321059.38723: - pam,syslog,
+2023 Jun 09 11:30:59 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:30:57 isabela-ThinkCentre-M720s sshd[87555]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686321059.38987: - pam,syslog,
+2023 Jun 09 11:30:59 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:30:57 isabela-ThinkCentre-M720s sshd[88244]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686321115.39251: - syslog,sshd,authentication_success,
+2023 Jun 09 11:31:55 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:31:54 isabela-ThinkCentre-M720s sshd[88312]: Accepted password for luiz from 172.16.255.198 port 46054 ssh2
+
+** Alert 1686321115.39590: - pam,syslog,authentication_success,
+2023 Jun 09 11:31:55 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:31:54 isabela-ThinkCentre-M720s sshd[88312]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686321115.39898: - pam,syslog,
+2023 Jun 09 11:31:55 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:31:54 isabela-ThinkCentre-M720s sshd[88312]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686321115.40162: - syslog,sshd,authentication_success,
+2023 Jun 09 11:31:55 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:31:54 isabela-ThinkCentre-M720s sshd[88314]: Accepted password for luiz from 172.16.255.198 port 46058 ssh2
+
+** Alert 1686321115.40501: - pam,syslog,authentication_success,
+2023 Jun 09 11:31:55 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:31:54 isabela-ThinkCentre-M720s sshd[88314]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686321115.40809: - pam,syslog,
+2023 Jun 09 11:31:55 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:31:54 isabela-ThinkCentre-M720s sshd[88314]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686321115.41073: - syslog,sshd,authentication_success,
+2023 Jun 09 11:31:55 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:31:54 isabela-ThinkCentre-M720s sshd[88325]: Accepted password for luiz from 172.16.255.198 port 46070 ssh2
+
+** Alert 1686321115.41412: - pam,syslog,authentication_success,
+2023 Jun 09 11:31:55 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:31:54 isabela-ThinkCentre-M720s sshd[88325]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686321115.41720: - pam,syslog,
+2023 Jun 09 11:31:55 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:31:54 isabela-ThinkCentre-M720s sshd[88325]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686321115.41984: - syslog,sshd,authentication_success,
+2023 Jun 09 11:31:55 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:31:54 isabela-ThinkCentre-M720s sshd[88336]: Accepted password for luiz from 172.16.255.198 port 46086 ssh2
+
+** Alert 1686321115.42323: - pam,syslog,authentication_success,
+2023 Jun 09 11:31:55 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:31:54 isabela-ThinkCentre-M720s sshd[88336]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686321115.42631: - syslog,sshd,authentication_success,
+2023 Jun 09 11:31:55 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:31:54 isabela-ThinkCentre-M720s sshd[88338]: Accepted password for luiz from 172.16.255.198 port 46102 ssh2
+
+** Alert 1686321115.42970: - pam,syslog,authentication_success,
+2023 Jun 09 11:31:55 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:31:54 isabela-ThinkCentre-M720s sshd[88338]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686321115.43278: - pam,syslog,
+2023 Jun 09 11:31:55 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:31:55 isabela-ThinkCentre-M720s sshd[88336]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686321509.43542: - pam,syslog,
+2023 Jun 09 11:38:29 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:38:27 isabela-ThinkCentre-M720s sshd[88338]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686321697.43806: - pam,syslog,
+2023 Jun 09 11:41:37 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:41:36 isabela-ThinkCentre-M720s sshd[88267]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686321705.44070: - syslog,sshd,authentication_success,
+2023 Jun 09 11:41:45 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:41:45 isabela-ThinkCentre-M720s sshd[88446]: Accepted password for luiz from 172.16.255.198 port 54664 ssh2
+
+** Alert 1686321705.44409: - syslog,sshd,authentication_success,
+2023 Jun 09 11:41:45 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:41:45 isabela-ThinkCentre-M720s sshd[88448]: Accepted password for luiz from 172.16.255.198 port 54668 ssh2
+
+** Alert 1686321705.44748: - pam,syslog,authentication_success,
+2023 Jun 09 11:41:45 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:41:45 isabela-ThinkCentre-M720s sshd[88446]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686321705.45056: - pam,syslog,authentication_success,
+2023 Jun 09 11:41:45 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:41:45 isabela-ThinkCentre-M720s sshd[88448]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686321707.45364: - pam,syslog,
+2023 Jun 09 11:41:47 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:41:45 isabela-ThinkCentre-M720s sshd[88448]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686321731.45628: - syslog,sshd,authentication_success,
+2023 Jun 09 11:42:11 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:42:11 isabela-ThinkCentre-M720s sshd[88468]: Accepted password for luiz from 172.16.255.198 port 35596 ssh2
+
+** Alert 1686321731.45967: - pam,syslog,authentication_success,
+2023 Jun 09 11:42:11 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:42:11 isabela-ThinkCentre-M720s sshd[88468]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686321731.46275: - syslog,sshd,authentication_success,
+2023 Jun 09 11:42:11 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:42:11 isabela-ThinkCentre-M720s sshd[88470]: Accepted password for luiz from 172.16.255.198 port 35600 ssh2
+
+** Alert 1686321731.46614: - pam,syslog,authentication_success,
+2023 Jun 09 11:42:11 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:42:11 isabela-ThinkCentre-M720s sshd[88470]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686321743.46922: - pam,syslog,
+2023 Jun 09 11:42:23 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:42:22 isabela-ThinkCentre-M720s sshd[88470]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686321743.47186: - pam,syslog,
+2023 Jun 09 11:42:23 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:42:22 isabela-ThinkCentre-M720s sshd[88468]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686321755.47450: - syslog,sshd,authentication_success,
+2023 Jun 09 11:42:35 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:42:33 isabela-ThinkCentre-M720s sshd[88491]: Accepted password for luiz from 172.16.255.198 port 56864 ssh2
+
+** Alert 1686321755.47789: - pam,syslog,authentication_success,
+2023 Jun 09 11:42:35 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:42:33 isabela-ThinkCentre-M720s sshd[88491]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686321755.48097: - syslog,sshd,authentication_success,
+2023 Jun 09 11:42:35 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 11:42:33 isabela-ThinkCentre-M720s sshd[88493]: Accepted password for luiz from 172.16.255.198 port 56870 ssh2
+
+** Alert 1686321755.48436: - pam,syslog,authentication_success,
+2023 Jun 09 11:42:35 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 11:42:33 isabela-ThinkCentre-M720s sshd[88493]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686321805.48744: - pam,syslog,
+2023 Jun 09 11:43:25 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:43:25 isabela-ThinkCentre-M720s sshd[88493]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686321805.49008: - pam,syslog,
+2023 Jun 09 11:43:25 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:43:25 isabela-ThinkCentre-M720s sshd[88491]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686322048.49272: - pam,syslog,
+2023 Jun 09 11:47:28 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:47:27 isabela-ThinkCentre-M720s sshd[88256]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686322318.49536: - pam,syslog,
+2023 Jun 09 11:51:58 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:51:57 isabela-ThinkCentre-M720s sshd[88446]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686322646.49800: - pam,syslog,
+2023 Jun 09 11:57:26 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:57:24 isabela-ThinkCentre-M720s su: pam_unix(su-l:session): session closed for user luizroot
+
+** Alert 1686322646.50059: - pam,syslog,
+2023 Jun 09 11:57:26 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 11:57:26 isabela-ThinkCentre-M720s sshd[78274]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686332052.50323: - syslog,sshd,authentication_success,
+2023 Jun 09 14:34:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 14:34:11 isabela-ThinkCentre-M720s sshd[89120]: Accepted password for luiz from 172.16.255.198 port 48362 ssh2
+
+** Alert 1686332052.50662: - pam,syslog,authentication_success,
+2023 Jun 09 14:34:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 14:34:11 isabela-ThinkCentre-M720s sshd[89120]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686332052.50970: - syslog,sshd,authentication_success,
+2023 Jun 09 14:34:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 14:34:11 isabela-ThinkCentre-M720s sshd[89122]: Accepted password for luiz from 172.16.255.198 port 48366 ssh2
+
+** Alert 1686332052.51309: - syslog,sshd,authentication_success,
+2023 Jun 09 14:34:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 14:34:11 isabela-ThinkCentre-M720s sshd[89121]: Accepted password for luiz from 172.16.255.198 port 48364 ssh2
+
+** Alert 1686332052.51648: - syslog,sshd,authentication_success,
+2023 Jun 09 14:34:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 14:34:11 isabela-ThinkCentre-M720s sshd[89123]: Accepted password for luiz from 172.16.255.198 port 48370 ssh2
+
+** Alert 1686332052.51987: - pam,syslog,authentication_success,
+2023 Jun 09 14:34:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 14:34:11 isabela-ThinkCentre-M720s sshd[89122]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686332052.52295: - pam,syslog,authentication_success,
+2023 Jun 09 14:34:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 14:34:11 isabela-ThinkCentre-M720s sshd[89121]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686332052.52603: - pam,syslog,authentication_success,
+2023 Jun 09 14:34:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 14:34:11 isabela-ThinkCentre-M720s sshd[89123]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686332052.52911: - syslog,sshd,authentication_success,
+2023 Jun 09 14:34:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: luiz
+Jun  9 14:34:11 isabela-ThinkCentre-M720s sshd[89128]: Accepted password for luiz from 172.16.255.198 port 48382 ssh2
+
+** Alert 1686332052.53250: - pam,syslog,authentication_success,
+2023 Jun 09 14:34:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun  9 14:34:11 isabela-ThinkCentre-M720s sshd[89128]: pam_unix(sshd:session): session opened for user luiz(uid=1001) by (uid=0)
+
+** Alert 1686332232.53558: - pam,syslog,
+2023 Jun 09 14:37:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 14:37:11 isabela-ThinkCentre-M720s sshd[89122]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686332232.53822: - pam,syslog,
+2023 Jun 09 14:37:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 14:37:11 isabela-ThinkCentre-M720s sshd[89123]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686332232.54086: - pam,syslog,
+2023 Jun 09 14:37:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 14:37:11 isabela-ThinkCentre-M720s sshd[89121]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686332232.54350: - pam,syslog,
+2023 Jun 09 14:37:12 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 14:37:11 isabela-ThinkCentre-M720s sshd[89120]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686344541.54614: - pam,syslog,
+2023 Jun 09 18:02:21 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun  9 18:02:20 isabela-ThinkCentre-M720s sshd[89128]: pam_unix(sshd:session): session closed for user luiz
+
+** Alert 1686354568.54878: mail  - syslog,errors,
+2023 Jun 09 20:49:28 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun  9 20:49:27 utfpr-cm ttn-gateway[6272]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686354568.55162: mail  - syslog,errors,
+2023 Jun 09 20:49:28 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun  9 20:49:27 utfpr-cm ttn-gateway[6272]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686366000.0: - local,syslog,apparmor
+2023 Jun 10 00:00:00 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 52002 (level 3) -> 'Apparmor DENIED'
+Jun 10 00:00:00 isabela-ThinkCentre-M720s kernel: [1328959.874082] audit: type=1400 audit(1686366000.098:97): apparmor="DENIED" operation="capable" profile="/usr/sbin/cups-browsed" pid=91275 comm="cups-browsed" capability=23  capname="sys_nice"
+
+** Alert 1686387985.400: mail  - ossec,syscheck,
+2023 Jun 10 06:06:25 (gwLora) 192.168.2.83->syscheck
+Rule: 550 (level 7) -> 'Integrity checksum changed.'
+Integrity checksum changed for: '/etc/fake-hwclock.data'
+Old md5sum was: 'd08679532f4c48a1b5dd51c5826ab795'
+New md5sum is : 'cb8d21f7d1b03c3f02396964aedd9183'
+Old sha1sum was: 'ad82445e1a29bdc781b147e4faf4273b3d70032b'
+New sha1sum is : 'c4a301fcb0da207d3060dfc0103d05e9307de0be'
+
+
+** Alert 1686388582.836: mail  - ossec,syscheck,
+2023 Jun 10 06:16:22 isabela-ThinkCentre-M720s->syscheck
+Rule: 550 (level 7) -> 'Integrity checksum changed.'
+Integrity checksum changed for: '/etc/ld.so.cache'
+Size changed from '67947' to '68199'
+Old md5sum was: 'd063a00cde04e49efc4edba87a90f773'
+New md5sum is : 'f053e46c608755d0b43ccf5942bf5364'
+Old sha1sum was: '506f7475d540d0af145d9ef12538206da380d17b'
+New sha1sum is : '6a4e045417bbcfa8e883a4b6b25ab24d7b2b5dde'
+
+
+** Alert 1686388642.1307: mail  - ossec,syscheck,
+2023 Jun 10 06:17:22 isabela-ThinkCentre-M720s->syscheck
+Rule: 552 (level 7) -> 'Integrity checksum changed again (3rd time).'
+Integrity checksum changed for: '/etc/cups/subscriptions.conf'
+Old md5sum was: '91cb8b4edac978e7afa1281e5c1d29a8'
+New md5sum is : '196fe8b5a1c69da33266c02759753a36'
+Old sha1sum was: '05b115cc6679b73bb0769fa99238e576e7c4f9fe'
+New sha1sum is : '6e5842f3e9504e81f5729c0210b8b49fd4054950'
+
+
+** Alert 1686388642.1771: mail  - ossec,syscheck,
+2023 Jun 10 06:17:22 isabela-ThinkCentre-M720s->syscheck
+Rule: 552 (level 7) -> 'Integrity checksum changed again (3rd time).'
+Integrity checksum changed for: '/etc/cups/subscriptions.conf.O'
+Old md5sum was: '04ac4a9803f9b1a5918a7783595216f6'
+New md5sum is : '292013861dc556696e7dadec0d043107'
+Old sha1sum was: 'b3d986c98d93cf75174bffd357db8d372fc15585'
+New sha1sum is : 'e82e7b0f57e0552449954788c746500c9618e585'
+
+
+** Alert 1686388792.2237: mail  - ossec,syscheck,
+2023 Jun 10 06:19:52 isabela-ThinkCentre-M720s->syscheck
+Rule: 550 (level 7) -> 'Integrity checksum changed.'
+Integrity checksum changed for: '/etc/group'
+Size changed from '1196' to '1204'
+Old md5sum was: '856198aed9f23f85e4313ce2788c5466'
+New md5sum is : '53ea09edb801bd8a7d0ae3f2ea866e85'
+Old sha1sum was: '5595cceee0640676b58389027ddabca525eb6d21'
+New sha1sum is : '6a938ce6826d5da3a2a4f8123320322dc09af196'
+
+
+** Alert 1686389156.2701: - ossec,
+2023 Jun 10 06:25:56 (gwLora) 192.168.2.83->ossec-logcollector
+Rule: 591 (level 3) -> 'Log file rotated.'
+ossec: File rotated (inode changed): '/var/log/syslog'.
+
+** Alert 1686420502.2899: mail  - syslog,errors,
+2023 Jun 10 15:08:22 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 10 15:08:21 utfpr-cm ttn-gateway[20100]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686420502.3183: mail  - syslog,errors,
+2023 Jun 10 15:08:22 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 10 15:08:21 utfpr-cm ttn-gateway[20100]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686434701.3467: mail  - syslog,errors,
+2023 Jun 10 19:05:01 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 10 19:05:00 utfpr-cm ttn-gateway[22957]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686434701.3751: mail  - syslog,errors,
+2023 Jun 10 19:05:01 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 10 19:05:00 utfpr-cm ttn-gateway[22957]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686437730.4035: mail  - syslog,errors,
+2023 Jun 10 19:55:30 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 10 19:55:29 utfpr-cm ttn-gateway[23606]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686437730.4319: mail  - syslog,errors,
+2023 Jun 10 19:55:30 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 10 19:55:29 utfpr-cm ttn-gateway[23606]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686444253.4603: mail  - syslog,errors,
+2023 Jun 10 21:44:13 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 10 21:44:11 utfpr-cm ttn-gateway[24939]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686444253.4887: mail  - syslog,errors,
+2023 Jun 10 21:44:13 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 10 21:44:11 utfpr-cm ttn-gateway[24939]: INFO: packets received with a CRC error will NOT be forwarded
+  
+** Alert 1686452401.0: - local,syslog,apparmor
+2023 Jun 11 00:00:01 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 52002 (level 3) -> 'Apparmor DENIED'
+Jun 11 00:00:00 isabela-ThinkCentre-M720s kernel: [1415359.460710] audit: type=1400 audit(1686452400.152:98): apparmor="DENIED" operation="capable" profile="/usr/sbin/cupsd" pid=98042 comm="cupsd" capability=12  capname="net_admin"
+
+** Alert 1686452401.387: - local,syslog,apparmor
+2023 Jun 11 00:00:01 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 52002 (level 3) -> 'Apparmor DENIED'
+Jun 11 00:00:00 isabela-ThinkCentre-M720s kernel: [1415359.474294] audit: type=1400 audit(1686452400.164:99): apparmor="DENIED" operation="capable" profile="/usr/sbin/cups-browsed" pid=98045 comm="cups-browsed" capability=23  capname="sys_nice"
+
+** Alert 1686452528.789: - ossec,
+2023 Jun 11 00:02:08 isabela-ThinkCentre-M720s->ossec-logcollector
+Rule: 591 (level 3) -> 'Log file rotated.'
+ossec: File rotated (inode changed): '/var/log/auth.log'.
+
+** Alert 1686452528.992: - ossec,
+2023 Jun 11 00:02:08 isabela-ThinkCentre-M720s->ossec-logcollector
+Rule: 591 (level 3) -> 'Log file rotated.'
+ossec: File rotated (inode changed): '/var/log/syslog'.
+
+** Alert 1686452530.1193: mail  - syslog,errors,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 11 00:00:00 isabela-ThinkCentre-M720s snort[21061]:     Bad TTL:            0 (  0.000%)
+
+** Alert 1686452530.1467: mail  - syslog,errors,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 11 00:00:00 isabela-ThinkCentre-M720s snort[21061]:         Bad handshakes: 0         
+
+** Alert 1686452530.1739: mail  - syslog,errors,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 11 00:00:02 isabela-ThinkCentre-M720s snort[21047]:     Bad TTL:            0 (  0.000%)
+
+** Alert 1686452530.2013: mail  - syslog,errors,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 11 00:00:02 isabela-ThinkCentre-M720s snort[21047]:         Bad handshakes: 0         
+
+** Alert 1686452530.2285: mail  - syslog,errors,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 11 00:00:03 isabela-ThinkCentre-M720s snort[98094]:         Check for Bounce Attacks: YES alert: YES
+
+** Alert 1686452530.2571: mail  - syslog,errors,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 11 00:00:03 isabela-ThinkCentre-M720s snort[98094]:     Bad Message Direction Alert: DISABLED
+
+** Alert 1686452530.2850: mail  - syslog,errors,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 11 00:00:03 isabela-ThinkCentre-M720s snort[98094]:     Bad Payload Size Alert: DISABLED
+
+** Alert 1686452530.3124: - stats,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 11 (level 4) -> 'Excessive number of events (above normal).'
+The average number of logs between 0:00 and 1:00 is 200. We reached 1451.
+
+** Alert 1686452530.3365: mail  - ids,fts,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 20100 (level 8) -> 'First time this IDS alert is generated.'
+Jun 11 00:00:03 isabela-ThinkCentre-M720s snort[98094]: [ Port Based Pattern Matching Memory ]
+
+** Alert 1686452530.3635: - ids,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 20101 (level 6) -> 'IDS event.'
+Jun 11 00:00:03 isabela-ThinkCentre-M720s snort[98094]: [ Number of patterns truncated to 20 bytes: 1038 ]
+
+** Alert 1686452530.3878: mail  - syslog,errors,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 11 00:00:03 isabela-ThinkCentre-M720s snort[98112]:         Check for Bounce Attacks: YES alert: YES
+
+** Alert 1686452530.4164: mail  - syslog,errors,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 11 00:00:03 isabela-ThinkCentre-M720s snort[98112]:     Bad Message Direction Alert: DISABLED
+
+** Alert 1686452530.4443: mail  - syslog,errors,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 11 00:00:03 isabela-ThinkCentre-M720s snort[98112]:     Bad Payload Size Alert: DISABLED
+
+** Alert 1686452530.4717: - ids,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 20101 (level 6) -> 'IDS event.'
+Jun 11 00:00:03 isabela-ThinkCentre-M720s snort[98112]: [ Port Based Pattern Matching Memory ]
+
+** Alert 1686452530.4948: - ids,
+2023 Jun 11 00:02:10 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 20101 (level 6) -> 'IDS event.'
+Jun 11 00:00:03 isabela-ThinkCentre-M720s snort[98112]: [ Number of patterns truncated to 20 bytes: 1038 ]
+
+** Alert 1686455136.5191: mail  - syslog,errors,
+2023 Jun 11 00:45:36 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 11 00:45:35 utfpr-cm ttn-gateway[27616]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686455136.5475: mail  - syslog,errors,
+2023 Jun 11 00:45:36 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 11 00:45:35 utfpr-cm ttn-gateway[27616]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686467955.5759: mail  - ossec,syscheck,
+2023 Jun 11 04:19:15 (gwLora) 192.168.2.83->syscheck
+Rule: 551 (level 7) -> 'Integrity checksum changed again (2nd time).'
+Integrity checksum changed for: '/etc/fake-hwclock.data'
+Old md5sum was: 'cb8d21f7d1b03c3f02396964aedd9183'
+New md5sum is : '8eaf436f0787956e7b5b3637ed8cca76'
+Old sha1sum was: 'c4a301fcb0da207d3060dfc0103d05e9307de0be'
+New sha1sum is : 'a666839885ef3b50e5448f98899edeb6a6146f11'
+
+
+** Alert 1686475565.6213: - ossec,
+2023 Jun 11 06:26:05 (gwLora) 192.168.2.83->ossec-logcollector
+Rule: 591 (level 3) -> 'Log file rotated.'
+ossec: File rotated (inode changed): '/var/log/syslog'.
+
+** Alert 1686526174.6411: mail  - syslog,errors,
+2023 Jun 11 20:29:34 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 11 20:29:32 utfpr-cm ttn-gateway[9571]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686526174.6694: mail  - syslog,errors,
+2023 Jun 11 20:29:34 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 11 20:29:32 utfpr-cm ttn-gateway[9571]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686538801.0: - local,syslog,apparmor
+2023 Jun 12 00:00:01 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 52002 (level 3) -> 'Apparmor DENIED'
+Jun 12 00:00:00 isabela-ThinkCentre-M720s kernel: [1501758.988892] audit: type=1400 audit(1686538800.159:100): apparmor="DENIED" operation="capable" profile="/usr/sbin/cupsd" pid=105811 comm="cupsd" capability=12  capname="net_admin"
+
+** Alert 1686547926.389: mail  - ossec,syscheck,
+2023 Jun 12 02:32:06 (gwLora) 192.168.2.83->syscheck
+Rule: 552 (level 7) -> 'Integrity checksum changed again (3rd time).'
+Integrity checksum changed for: '/etc/fake-hwclock.data'
+Old md5sum was: '8eaf436f0787956e7b5b3637ed8cca76'
+New md5sum is : '27b6ea394229ece5a751c591b829b5b0'
+Old sha1sum was: 'a666839885ef3b50e5448f98899edeb6a6146f11'
+New sha1sum is : 'd3b038a48fc2251470dfbc45b89fd07e4c9c8fd4'
+
+
+** Alert 1686555790.842: mail  - syslog,errors,
+2023 Jun 12 04:43:10 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 12 04:43:10 utfpr-cm ttn-gateway[16019]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686555790.1125: mail  - syslog,errors,
+2023 Jun 12 04:43:10 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 12 04:43:10 utfpr-cm ttn-gateway[16019]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686561974.1409: - ossec,
+2023 Jun 12 06:26:14 (gwLora) 192.168.2.83->ossec-logcollector
+Rule: 591 (level 3) -> 'Log file rotated.'
+ossec: File rotated (inode changed): '/var/log/messages'.
+
+** Alert 1686561974.1609: - ossec,
+2023 Jun 12 06:26:14 (gwLora) 192.168.2.83->ossec-logcollector
+Rule: 591 (level 3) -> 'Log file rotated.'
+ossec: File rotated (inode changed): '/var/log/auth.log'.
+
+** Alert 1686561974.1809: - ossec,
+2023 Jun 12 06:26:14 (gwLora) 192.168.2.83->ossec-logcollector
+Rule: 591 (level 3) -> 'Log file rotated.'
+ossec: File rotated (inode changed): '/var/log/syslog'.
+
+** Alert 1686577194.2007: mail  - syslog,errors,
+2023 Jun 12 10:39:54 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 12 10:39:54 utfpr-cm ttn-gateway[20455]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686577194.2291: mail  - syslog,errors,
+2023 Jun 12 10:39:54 (gwLora) 192.168.2.83->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 12 10:39:54 utfpr-cm ttn-gateway[20455]: INFO: packets received with a CRC error will NOT be forwarded
+
+** Alert 1686577656.2575: - syslog,sshd,authentication_success,
+2023 Jun 12 10:47:36 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: isabela
+Jun 12 10:47:35 isabela-ThinkCentre-M720s sshd[108402]: Accepted password for isabela from 172.16.255.198 port 53982 ssh2
+
+** Alert 1686577656.2920: - pam,syslog,authentication_success,
+2023 Jun 12 10:47:36 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun 12 10:47:35 isabela-ThinkCentre-M720s sshd[108402]: pam_unix(sshd:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686577656.3231: - pam,syslog,authentication_success,
+2023 Jun 12 10:47:36 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun 12 10:47:35 isabela-ThinkCentre-M720s systemd: pam_unix(systemd-user:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686577656.3545: mail  - syslog,errors,
+2023 Jun 12 10:47:36 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 12 10:47:35 isabela-ThinkCentre-M720s pipewire[108415]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+
+** Alert 1686577656.3847: mail  - syslog,errors,
+2023 Jun 12 10:47:36 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 12 10:47:35 isabela-ThinkCentre-M720s pipewire[108415]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+
+** Alert 1686577656.4149: mail  - syslog,errors,
+2023 Jun 12 10:47:36 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 12 10:47:35 isabela-ThinkCentre-M720s pulseaudio[108416]: org.bluez.ProfileManager1.RegisterProfile() failed: org.bluez.Error.NotPermitted: UUID already registered
+
+** Alert 1686577785.4498: mail  - syslog,sudo
+2023 Jun 12 10:49:45 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5403 (level 4) -> 'First time user executed sudo.'
+Jun 12 10:49:43 isabela-ThinkCentre-M720s sudo:  isabela : command not allowed ; TTY=pts/0 ; PWD=/home/isabela ; USER=root ; COMMAND=/var/ossec/logs/~
+
+** Alert 1686577785.4819: mail  - syslog,errors,
+2023 Jun 12 10:49:45 isabela-ThinkCentre-M720s->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+Jun 12 10:47:35 isabela-ThinkCentre-M720s pulseaudio[108416]: org.bluez.ProfileManager1.RegisterProfile() failed: org.bluez.Error.NotPermitted: UUID already registered
+
+** Alert 1686578053.5168: - syslog,sudo
+2023 Jun 12 10:54:13 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: isabela
+Jun 12 10:54:11 isabela-ThinkCentre-M720s sudo:  isabela : TTY=pts/0 ; PWD=/home/isabela ; USER=root ; COMMAND=/usr/bin/su
+
+** Alert 1686578053.5471: - pam,syslog,authentication_success,
+2023 Jun 12 10:54:13 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun 12 10:54:11 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session opened for user root(uid=0) by isabela(uid=1000)
+
+** Alert 1686578053.5778: - pam,syslog,authentication_success,
+2023 Jun 12 10:54:13 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun 12 10:54:11 isabela-ThinkCentre-M720s su: pam_unix(su:session): session opened for user root(uid=0) by isabela(uid=0)
+
+** Alert 1686578609.6078: - syslog,sshd,authentication_success,
+2023 Jun 12 11:03:29 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: isabela
+Jun 12 11:03:28 isabela-ThinkCentre-M720s sshd[108484]: Accepted password for isabela from 172.16.255.198 port 53328 ssh2
+
+** Alert 1686578609.6423: - pam,syslog,authentication_success,
+2023 Jun 12 11:03:29 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun 12 11:03:28 isabela-ThinkCentre-M720s sshd[108484]: pam_unix(sshd:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686578609.6734: - pam,syslog,
+2023 Jun 12 11:03:29 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun 12 11:03:28 isabela-ThinkCentre-M720s sshd[108484]: pam_unix(sshd:session): session closed for user isabela
+
+** Alert 1686578633.7001: - syslog,sshd,authentication_success,
+2023 Jun 12 11:03:53 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: isabela
+Jun 12 11:03:52 isabela-ThinkCentre-M720s sshd[108497]: Accepted password for isabela from 172.16.255.198 port 54754 ssh2
+
+** Alert 1686578633.7346: - pam,syslog,authentication_success,
+2023 Jun 12 11:03:53 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun 12 11:03:52 isabela-ThinkCentre-M720s sshd[108497]: pam_unix(sshd:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686578633.7657: - pam,syslog,
+2023 Jun 12 11:03:53 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun 12 11:03:52 isabela-ThinkCentre-M720s sshd[108497]: pam_unix(sshd:session): session closed for user isabela
+
+** Alert 1686578790.7924: - pam,syslog,authentication_failed,
+2023 Jun 12 11:06:30 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5503 (level 5) -> 'User login failed.'
+Src IP: 172.16.255.198
+User: isabela
+Jun 12 11:06:28 isabela-ThinkCentre-M720s sshd[108517]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.255.198  user=isabela
+
+** Alert 1686578792.8308: - syslog,sshd,authentication_failed,
+2023 Jun 12 11:06:32 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5716 (level 5) -> 'SSHD authentication failed.'
+Src IP: 172.16.255.198
+User: isabela
+Jun 12 11:06:30 isabela-ThinkCentre-M720s sshd[108517]: Failed password for isabela from 172.16.255.198 port 53594 ssh2
+
+** Alert 1686578796.8649: - syslog,sshd,authentication_success,
+2023 Jun 12 11:06:36 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: isabela
+Jun 12 11:06:35 isabela-ThinkCentre-M720s sshd[108517]: Accepted password for isabela from 172.16.255.198 port 53594 ssh2
+
+** Alert 1686578796.8994: - pam,syslog,authentication_success,
+2023 Jun 12 11:06:36 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun 12 11:06:35 isabela-ThinkCentre-M720s sshd[108517]: pam_unix(sshd:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686578796.9305: - pam,syslog,
+2023 Jun 12 11:06:36 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun 12 11:06:35 isabela-ThinkCentre-M720s sshd[108517]: pam_unix(sshd:session): session closed for user isabela
+
+** Alert 1686578858.9572: - syslog,sshd,authentication_success,
+2023 Jun 12 11:07:38 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: isabela
+Jun 12 11:07:37 isabela-ThinkCentre-M720s sshd[108529]: Accepted password for isabela from 172.16.255.198 port 34776 ssh2
+
+** Alert 1686578858.9917: - pam,syslog,authentication_success,
+2023 Jun 12 11:07:38 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun 12 11:07:37 isabela-ThinkCentre-M720s sshd[108529]: pam_unix(sshd:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686578858.10228: - pam,syslog,
+2023 Jun 12 11:07:38 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun 12 11:07:37 isabela-ThinkCentre-M720s sshd[108529]: pam_unix(sshd:session): session closed for user isabela
+
+** Alert 1686578982.10496: mail  - syslog,sudo
+2023 Jun 12 11:09:42 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5403 (level 4) -> 'First time user executed sudo.'
+User: root
+Jun 12 11:09:41 isabela-ThinkCentre-M720s sudo:     root : TTY=pts/1 ; PWD=/var/ossec/logs/alerts ; USER=root ; COMMAND=/usr/bin/chmod -R 777 /var/ossec/logs
+
+** Alert 1686578982.10836: - pam,syslog,authentication_success,
+2023 Jun 12 11:09:42 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun 12 11:09:41 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session opened for user root(uid=0) by isabela(uid=0)
+
+** Alert 1686578982.11141: - pam,syslog,
+2023 Jun 12 11:09:42 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun 12 11:09:41 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1686578996.11398: - syslog,sshd,authentication_success,
+2023 Jun 12 11:09:56 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: isabela
+Jun 12 11:09:54 isabela-ThinkCentre-M720s sshd[108599]: Accepted password for isabela from 172.16.255.198 port 37558 ssh2
+
+** Alert 1686578996.11744: - pam,syslog,authentication_success,
+2023 Jun 12 11:09:56 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun 12 11:09:54 isabela-ThinkCentre-M720s sshd[108599]: pam_unix(sshd:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686578996.12056: - pam,syslog,
+2023 Jun 12 11:09:56 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun 12 11:09:54 isabela-ThinkCentre-M720s sshd[108599]: pam_unix(sshd:session): session closed for user isabela
+
+** Alert 1686579102.12324: - syslog,sshd,authentication_success,
+2023 Jun 12 11:11:42 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: isabela
+Jun 12 11:11:42 isabela-ThinkCentre-M720s sshd[108620]: Accepted password for isabela from 172.16.255.198 port 46770 ssh2
+
+** Alert 1686579102.12670: - pam,syslog,authentication_success,
+2023 Jun 12 11:11:42 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun 12 11:11:42 isabela-ThinkCentre-M720s sshd[108620]: pam_unix(sshd:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686579104.12982: - pam,syslog,
+2023 Jun 12 11:11:44 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun 12 11:11:43 isabela-ThinkCentre-M720s sshd[108620]: pam_unix(sshd:session): session closed for user isabela
+
+** Alert 1686579124.13250: - syslog,sudo
+2023 Jun 12 11:12:04 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: root
+Jun 12 11:12:03 isabela-ThinkCentre-M720s sudo:     root : TTY=pts/1 ; PWD=/var/ossec/logs/alerts ; USER=root ; COMMAND=/usr/bin/chmod -R 777 /var/ossec/logs/alerts
+
+** Alert 1686579124.13593: - pam,syslog,authentication_success,
+2023 Jun 12 11:12:04 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun 12 11:12:03 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session opened for user root(uid=0) by isabela(uid=0)
+
+** Alert 1686579124.13898: - pam,syslog,
+2023 Jun 12 11:12:04 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun 12 11:12:03 isabela-ThinkCentre-M720s sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1686579140.14155: - syslog,sshd,authentication_success,
+2023 Jun 12 11:12:20 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 172.16.255.198
+User: isabela
+Jun 12 11:12:18 isabela-ThinkCentre-M720s sshd[108635]: Accepted password for isabela from 172.16.255.198 port 57666 ssh2
+
+** Alert 1686579140.14501: - pam,syslog,authentication_success,
+2023 Jun 12 11:12:20 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Jun 12 11:12:18 isabela-ThinkCentre-M720s sshd[108635]: pam_unix(sshd:session): session opened for user isabela(uid=1000) by (uid=0)
+
+** Alert 1686579140.14813: - pam,syslog,
+2023 Jun 12 11:12:20 isabela-ThinkCentre-M720s->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Jun 12 11:12:19 isabela-ThinkCentre-M720s sshd[108635]: pam_unix(sshd:session): session closed for user isabela
