@@ -3820,3 +3820,11 @@
 06/08-20:24:31.173023  [**] [1:1415:9] SNMP Broadcast request [**] [Classification: Attempted Information Leak] [Priority: 2] {UDP} 192.168.2.22:40624 -> 255.255.255.255:161
 06/08-20:35:12.929201  [**] [1:254:4] DNS SPOOF query response with TTL of 1 min. and no authority [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 172.16.255.202:53 -> 192.168.2.83:52113
 06/08-20:35:12.929215  [**] [1:254:4] DNS SPOOF query response with TTL of 1 min. and no authority [**] [Classification: Potentially Bad Traffic] [Priority: 2] {UDP} 172.16.255.202:53 -> 192.168.2.83:52113
+07/15-18:48:15.798085  [**] [1:1000001:0] Acesso ao gateway LoRa por um IP fora do padrão [**] [Priority: 0] {ICMP} 192.168.2.83 -> 142.250.219.238
+07/15-18:48:15.817885  [**] [1:1000002:0] Acesso ao gateway LoRa por um IP fora do padrão [**] [Priority: 0] {ICMP} 142.250.219.238 -> 192.168.2.83
+07/15-18:48:15.798098  [**] [1:1000001:0] Acesso ao gateway LoRa por um IP fora do padrão [**] [Priority: 0] {ICMP} 192.168.2.83 -> 142.250.219.238
+07/15-18:48:15.817871  [**] [1:1000002:0] Acesso ao gateway LoRa por um IP fora do padrão [**] [Priority: 0] {ICMP} 142.250.219.238 -> 192.168.2.83
+07/15-18:48:21.983746  [**] [1:1000001:0] Acesso ao gateway LoRa por um IP fora do padrão [**] [Priority: 0] {UDP} 192.168.2.83:53589 -> 13.238.174.71:1700
+07/15-18:48:22.319884  [**] [1:1000002:0] Acesso ao gateway LoRa por um IP fora do padrão [**] [Priority: 0] {UDP} 13.238.174.71:1700 -> 192.168.2.83:53589
+07/15-18:48:21.983760  [**] [1:1000001:0] Acesso ao gateway LoRa por um IP fora do padrão [**] [Priority: 0] {UDP} 192.168.2.83:53589 -> 13.238.174.71:1700
+07/15-18:48:22.319870  [**] [1:1000002:0] Acesso ao gateway LoRa por um IP fora do padrão [**] [Priority: 0] {UDP} 13.238.174.71:1700 -> 192.168.2.83:53589
